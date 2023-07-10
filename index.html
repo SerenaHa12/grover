@@ -1,55 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grover</title>
 
-    <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/root.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- 1. Header -->
     <header>
-        <!-- 1.1 Header Navbar -->
-        <nav>
-            <img src="./assets/img/header/logo.svg" alt="logo_grover">
-            <div class="navbar">
-                <div class="nav-item">
-                    <input type="radio" id="home" name="menu" class="nav-input" checked>
-                    <label for="home" class="nav-label">Home</label>
-                </div>
-                <div class="nav-item">
-                    <input type="radio" id="about" name="menu" class="nav-input">
-                    <label for="about" class="nav-label">About</label>
-                </div>
-                <div class="nav-item">
-                    <input type="radio" id="contact" name="menu" class="nav-input">
-                    <label for="contact" class="nav-label">Contact</label>
-                </div>
-            </div>
-        </nav>
+      <!-- 1.1 Header Navbar -->
+      <nav>
+        <div class="nav-logo">
+          <img src="./assets/img/header/logo.svg" alt="logo_grover" />
+        </div>
 
-        <!-- 1.2 Header Banner -->
-        <div class="banner"></div>
+        <div class="navbar">
+          <div class="nav-item">
+            <input
+              type="radio"
+              id="home"
+              name="menu"
+              class="nav-input"
+              checked
+            />
+            <label for="home" class="nav-label">Home</label>
+          </div>
+          <div class="nav-item">
+            <input type="radio" id="menu" name="menu" class="nav-input" />
+            <label for="menu" class="nav-label">Menu</label>
+          </div>
+          <div class="nav-item">
+            <input type="radio" id="service" name="menu" class="nav-input" />
+            <label for="service" class="nav-label">Service</label>
+          </div>
+          <div class="nav-item">
+            <input type="radio" id="shop" name="menu" class="nav-input" />
+            <label for="shop" class="nav-label">Shop</label>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <label for="search"
+            ><i class="icon-search fa-solid fa-magnifying-glass"></i
+          ></label>
+          <input type="search" placeholder="Search" />
+          <label class="card" for=""
+            ><i class="icon-card fa-solid fa-cart-shopping"></i
+          ></label>
+        </div>
+      </nav>
+
+      <!-- 1.2 Header Banner -->
+      <div class="banner">
+        <div class="banner-content">
+          <div class="red-link">
+            <p class="red-link__text">More than Faster</p>
+            <img src="./assets/img/header/strawberry.svg" alt="strawberry" />
+          </div>
+          <h1>Groceries delivered in as little as <span>2 hours</span></h1>
+          <h3>
+            Grocen atssures fresh grocery every morning to your family without
+            getting out in this pandemic.
+          </h3>
+          <div class="btn">
+            <button class="btn-red">Order Now</button>
+            <img src="./assets/img/header/button-play.svg" alt="button play" />
+            <button class="btn-white">Order Process</button>
+          </div>
+        </div>
+        <div class="banner-img">
+          <img src="./assets/img/header/header-img.png" alt="banner" />
+        </div>
+      </div>
     </header>
 
     <!-- 2. Main -->
     <main>
-        <!-- 2.1 Section Serve -->
-        <section class="serve"></section>
+      <!-- 2.1 Section Serve -->
+      <section class="serve">
+        <div class="serve-title">
+          <h4>What we Serve</h4>
+          <h2>Fruit And Vegetable Delivered To Your Home</h2>
+        </div>
+        <div class="row">
+          <div class="item">
+            <div class="item-bg"></div>
+            <div class="item-content">
+              <div class="item-img">
+                <img src="./assets/img/serve/service-ic1.svg" alt="" />
+              </div>
+              <h3>Free Shipping</h3>
+              <p>Enjoy Order in a hand using the fresness of groceries</p>
+            </div>
+          </div>
 
-        <!-- 2.2 Section Choose -->
-        <section class="choose"></section>
+          <div class="item">
+            <div class="item-bg"></div>
+            <div class="item-content">
+              <div class="item-img">
+                <img src="./assets/img/serve/service-ic2.svg" alt="" />
+              </div>
+              <h3>15 days returns</h3>
+              <p>Order in a handy way using the freshness of the groceries.</p>
+            </div>
+          </div>
 
-        <!-- 2.3 Section Delivery -->
-        <section class="delivery"></section>
+          <div class="item">
+            <div class="item-bg"></div>
+            <div class="item-content">
+              <div class="item-img">
+                <img src="./assets/img/serve/service-ic3.svg" alt="" />
+              </div>
+              <h3>Secure checkout</h3>
+              <p>If you get rotten items - return immediately to us.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- 2.4 Section Download -->
-        <section class="download"></section>
+      <!-- 2.2 Section Choose -->
+      <section class="choose">
+        <div class="img">
+          <img src="./assets/img/choose/feat.png" alt="" />
+        </div>
+
+        <div class="content">
+          <h4>WHY CHOOSE US</h4>
+          <h2>Find Favorites And Discover New Ones</h2>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus
+            blanditiis praesen voluptatum deleniti.
+          </p>
+          <button class="btn-red">Explore Now</button>
+        </div>
+      </section>
+
+      <!-- 2.3 Section Delivery -->
+      <section class="delivery">
+        <div class="content">
+          <h4>HOME DELIVERY</h4>
+          <h2>Sit At Home We Will Take Care Your Order</h2>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+          </p>
+          <button class="btn-red">Explore Now</button>
+        </div>
+        <div class="img">
+          <img src="./assets/img/home_delivery/feat2.png" alt="" />
+        </div>
+      </section>
+
+      <!-- 2.4 Section Download -->
+      <section class="download">
+        <div class="img">
+          <img src="./assets/img/download/mobile.svg" alt="" />
+        </div>
+
+        <div class="content">
+          <h4>Download your app</h4>
+          <h2>Get The Groceries App Order More Easily.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut.
+          </p>
+          <div class="btn">
+            <button class="btn-icon">
+              <img src="./assets/img/download/apple.svg" alt="" />
+              <span>App Store</span>
+            </button>
+            <button class="btn-icon">
+              <img src="./assets/img/download/playstore.svg" alt="" />
+              <span>Play Store</span>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- 3. Footer -->
-    <footer></footer>
-</body>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-item">
+          <img src="./assets/img/header/logo.svg" alt="logo_footer" />
+          <p>
+            Fast delivery, which is active all over the world, serves with many
+            transportation vehicles.
+          </p>
+        </div>
+
+        <div class="footer-item">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#!">About Us</a></li>
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">All Products</a></li>
+                <li><a href="#!">Locations Map</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-item">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#!">About Us</a></li>
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">All Products</a></li>
+                <li><a href="#!">Locations Map</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-item">
+            <h3>Get in Touch</h3>
+            <p>
+                Subscribe to our weekly Newsletter and receive updates via email.
+            </p>
+        </div>
+      </div>
+
+      <div class="footer-bar">
+        <p>All Rights Reserved @ BESNIK 2021</p>
+        <div class="footer-links">
+            <span><a href="#!">Terms & Conditions</a></span>
+            <span><a href="#!">Privacy & Policy</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
