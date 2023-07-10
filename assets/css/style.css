@@ -5,6 +5,10 @@ header {
   padding-top: 40px;
 }
 /* ____________________1.1 Header Navbar________________________ */
+.icon-menu{
+    display: none;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
