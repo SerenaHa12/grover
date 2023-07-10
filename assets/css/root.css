@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color-red: #f86061;
+    --color-gray: #8b8b8b;
+    --color-yellow: #f9ba45;
+    --color-text-bold: #2e2e2e;
+    --color-text-medium: #6c6767;
+
+    --border-radius-btn: 16px;
+    --border-radius-card: 8px;
+}
+
+.btn{
+    padding: 10px 24px;
+
+}
