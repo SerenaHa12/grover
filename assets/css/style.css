@@ -5,6 +5,10 @@ header {
   padding-top: 40px;
 }
 /* ____________________1.1 Header Navbar________________________ */
+i.icon-menu.fa-solid.fa-bars {
+  display: none;
+}
+
 .icon-menu{
     display: none;
 }
@@ -46,6 +50,11 @@ header nav .nav-input:checked + .nav-label {
 
 header nav .nav-input:hover + .nav-label {
   color: var(--color-red);
+}
+
+header nav .nav-slide{
+  display: flex;
+  gap: 200px;
 }
 
 /* nav search */

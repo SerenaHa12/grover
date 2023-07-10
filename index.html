@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="./assets/css/root.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- icon -->
     <link
@@ -24,7 +24,12 @@
       <!-- 1.1 Header Navbar -->
       <nav>
         <div class="nav-logo">
-          <img src="./assets/img/header/logo.svg" alt="logo_grover" class="img"/>
+          <img
+            src="./assets/img/header/logo.svg"
+            alt="logo_grover"
+            class="img"
+          />
+          <i class="icon-menu fa-solid fa-bars"></i>
         </div>
 
         <div class="navbar">
@@ -61,7 +66,6 @@
             ><i class="icon-card fa-solid fa-cart-shopping"></i
           ></label>
         </div>
-        <i class="icon-menu fa-solid fa-bars"></i>
       </nav>
 
       <!-- 1.2 Header Banner -->
@@ -69,7 +73,7 @@
         <div class="banner-content">
           <div class="red-link">
             <p class="red-link__text">More than Faster</p>
-            <img src="./assets/img/header/strawberry.svg" alt="strawberry"/>
+            <img src="./assets/img/header/strawberry.svg" alt="strawberry" />
           </div>
           <h1>Groceries delivered in as little as <span>2 hours</span></h1>
           <h3>
@@ -78,7 +82,7 @@
           </h3>
           <div class="btn">
             <button class="btn-red">Order Now</button>
-            <img src="./assets/img/header/button-play.svg" alt="button play"/>
+            <img src="./assets/img/header/button-play.svg" alt="button play" />
             <button class="btn-white">Order Process</button>
           </div>
         </div>
@@ -135,7 +139,7 @@
       <!-- 2.2 Section Choose -->
       <section class="choose">
         <div class="img">
-          <img src="./assets/img/choose/feat.png" alt="" class="img"/>
+          <img src="./assets/img/choose/feat.png" alt="" class="img" />
         </div>
 
         <div class="content">
@@ -161,14 +165,14 @@
           <button class="btn-red">Explore Now</button>
         </div>
         <div class="img">
-          <img src="./assets/img/home_delivery/feat2.png" alt="" class="img"/>
+          <img src="./assets/img/home_delivery/feat2.png" alt="" class="img" />
         </div>
       </section>
 
       <!-- 2.4 Section Download -->
       <section class="download">
         <div class="img">
-          <img src="./assets/img/download/mobile.svg" alt="" class="img"/>
+          <img src="./assets/img/download/mobile.svg" alt="" class="img" />
         </div>
 
         <div class="content">
@@ -204,40 +208,61 @@
         </div>
 
         <div class="footer-item">
-            <h3>Company</h3>
-            <ul>
-                <li><a href="#!">About Us</a></li>
-                <li><a href="#!">Blog</a></li>
-                <li><a href="#!">All Products</a></li>
-                <li><a href="#!">Locations Map</a></li>
-            </ul>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#!">About Us</a></li>
+            <li><a href="#!">Blog</a></li>
+            <li><a href="#!">All Products</a></li>
+            <li><a href="#!">Locations Map</a></li>
+          </ul>
         </div>
 
         <div class="footer-item">
-            <h3>Services</h3>
-            <ul>
-                <li><a href="#!">About Us</a></li>
-                <li><a href="#!">Blog</a></li>
-                <li><a href="#!">All Products</a></li>
-                <li><a href="#!">Locations Map</a></li>
-            </ul>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#!">About Us</a></li>
+            <li><a href="#!">Blog</a></li>
+            <li><a href="#!">All Products</a></li>
+            <li><a href="#!">Locations Map</a></li>
+          </ul>
         </div>
 
         <div class="footer-item">
-            <h3>Get in Touch</h3>
-            <p>
-                Subscribe to our weekly Newsletter and receive updates via email.
-            </p>
+          <h3>Get in Touch</h3>
+          <p>
+            Subscribe to our weekly Newsletter and receive updates via email.
+          </p>
         </div>
       </div>
 
       <div class="footer-bar">
         <p>All Rights Reserved @ BESNIK 2021</p>
         <div class="footer-links">
-            <span><a href="#!">Terms & Conditions</a></span>
-            <span><a href="#!">Privacy & Policy</a></span>
+          <span><a href="#!">Terms & Conditions</a></span>
+          <span><a href="#!">Privacy & Policy</a></span>
         </div>
       </div>
     </footer>
+
+    <!-- js script -->
+    <script>
+      const iconMenu = document.querySelector(".icon-menu");
+      const navbar = document.querySelector(".navbar");
+      const navSearch = document.querySelector(".nav-search");
+
+      let isNavVisible = false;
+
+      iconMenu.addEventListener("click", () => {
+        if (isNavVisible) {
+          navbar.style.display = "none";
+          navSearch.style.display = "none";
+          isNavVisible = false;
+        } else {
+          navbar.style.display = "block";
+          navSearch.style.display = "block";
+          isNavVisible = true;
+        }
+      });
+    </script>
   </body>
 </html>
